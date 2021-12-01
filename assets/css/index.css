@@ -1,0 +1,939 @@
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.topnav {
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.topnav a {
+  display: inline-block;
+  margin-left: 50%;
+  color: #333;
+  text-align: center;
+  margin: auto;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+}
+
+.topnav #logo3 {
+  display: none;
+}
+
+.topnav img {
+  width: 120px;
+  height: 60px;
+}
+.topnav a:hover {
+  color: black;
+}
+.topnav a .icon:hover {
+  border: none;
+}
+.topnav a.active {
+  transition: 1s;
+  color: rgb(140, 179, 255);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/* ABOUT COMPONENT */
+.about-box {
+  padding: 50px;
+  padding-top: 130px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.about-box p {
+  text-align: justify;
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 2.1;
+}
+
+/* BENEFICIARY COMPONENT */
+.beneficiaries-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(189, 209, 250, 0.6);
+  padding: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.beneficiaries-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.beneficiaries {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+  padding-top: 50px;
+}
+
+/* PROJECT OUTLINE COMPONENT */
+.project-outline-box {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-outline-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.projects-outer-box {
+  display: flex;
+  flex-flow: column;
+}
+
+.projects-inner-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.projects {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+}
+.projects img {
+  vertical-align: middle;
+  width: 159px;
+  height: 159px;
+  border-radius: 50%;
+}
+
+.project-description {
+  align-self: center;
+  padding: 15px;
+  text-align: left;
+}
+.project-description p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 2.1;
+}
+
+/* PROJECT DURATION COMPONENT */
+.project-duration-box {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(189, 209, 250, 0.6);
+  padding: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+.project-duration-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.timely-events {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 30px;
+  padding-top: 50px;
+}
+
+.timely-events h2 {
+  width: 33%;
+  font-weight: 400;
+}
+
+/* COURSE OUTLINE COMPONENT */
+.courses-outline-box {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.courses-outline-box h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.courses-outer-box {
+  display: flex;
+  flex-flow: column;
+}
+
+.courses-inner-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.courses {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  flex-direction: row;
+}
+.courses img {
+  vertical-align: middle;
+  width: 159px;
+  height: 159px;
+  border-radius: 50%;
+}
+
+.courses-description {
+  align-self: center;
+  padding: 15px;
+  text-align: left;
+}
+.courses-description p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 2.1;
+}
+
+/* ADVANTAGES OT STUDENTS COMPONENT */
+.student-advantage {
+  display: flex;
+  flex-flow: column;
+  background-color: rgba(189, 209, 250, 0.6);
+  padding: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.student-advantage h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.advantages-inner-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 30px;
+}
+
+.advantages-inner-box h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* PROJECT PARTNER COMPONENT */
+.project-partners {
+  padding: 50px;
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.project-partners-innerbox-1 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+  padding-left: 100px;
+}
+
+.project-partners-innerbox-1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.project-partners-innerbox-1 img {
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+  width: 40%;
+}
+.project-partners-innerbox-2 {
+  width: 60%;
+  display: block;
+  text-align: left;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* INDUSTRIAL ASSOCIATES COMPONENT */
+.industry-associates {
+  padding: 50px;
+  display: flex;
+  margin-top: 3%;
+  flex-direction: row;
+}
+
+.associates-innerbox-1 {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 50px;
+  padding-left: 100px;
+}
+
+.associates-innerbox-1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.associates-innerbox-1 img {
+  display: block;
+  text-align: center;
+  margin-top: 5%;
+  width: 40%;
+}
+.associates-innerbox-2 {
+  width: 56%;
+  display: block;
+  text-align: left;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* EXPERTS PANEL COMPONENT */
+.experts-panel-box {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(189, 209, 250, 0.6);
+  padding: 50px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.experts-panel-inner-box-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  vertical-align: middle;
+  padding: 50px;
+  border-right: 1px solid rgba(53, 53, 53, 0.3);
+}
+
+.experts-panel-inner-box-1 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.experts-panel-inner-box-1 p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 2.1;
+}
+
+.experts-panel-inner-box-2 {
+  padding: 50px;
+  padding-top: 5px;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.experts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.experts img {
+  width: 159px;
+  height: 159px;
+  border-radius: 50%;
+  margin-top: 6%;
+}
+.experts h6 {
+  padding-top: 5px;
+}
+
+/* EDUCATION MOTO COMPONENT */
+.moto-box {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.moto-logo {
+  width: 40%;
+  padding: 40px;
+  display: block;
+  text-align: right;
+}
+
+.moto-description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.moto-description h2 {
+  vertical-align: middle;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 16%;
+}
+
+.moto-description h3 {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+}
+
+/* REACH US COMPONENT */
+.reach-us-box {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(189, 209, 250, 0.6);
+  padding: 50px;
+  justify-content: space-between;
+  text-align: left;
+}
+.reach-us-description {
+  width: 50%;
+  padding: 30px;
+}
+.reach-us-description h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+.reach-us-description h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 3%;
+}
+.reach-us-btn {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding: 40px;
+}
+
+.reach-us-btn button {
+  width: 60%;
+  padding: 10px;
+  background: #aabdff;
+  border: none;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2.8;
+}
+
+.reach-us-btn button:hover {
+  transition: 1s;
+  background: #8daef5;
+  background-position: left;
+}
+
+/* FOOTER COMPONENT */
+.footer-box {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background: #181818;
+  color: #f6f6f8;
+}
+.contact-info {
+  padding: 40px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contact-info h2 {
+  font-size: 35px;
+  font-weight: 300;
+}
+.contact-info p {
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+  margin: auto;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0.5px;
+}
+.copy-rights {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.copy-rights h5 {
+  margin-top: 1%;
+  font-size: 15px;
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  line-height: 17px;
+  letter-spacing: 0.25px;
+}
+.social-media {
+  width: 20%;
+  padding: 10px;
+  vertical-align: middle;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+.social-media a {
+  color: white;
+}
+.social-media a:hover {
+  color: #8daef5;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 768px) {
+  .topnav a {
+    display: none;
+  }
+  .topnav a.icon {
+    transition: 1s;
+    float: right;
+    display: block;
+    margin-top: 2%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topnav.responsive {
+    position: fixed;
+    vertical-align: middle;
+  }
+  .topnav #logo3 {
+    display: block;
+    float: left;
+    padding: 0px;
+    padding-left: 10px;
+  }
+  #logo3 {
+    width: 30%;
+  }
+  .topnav.responsive #logo1 {
+    display: none;
+  }
+  .topnav.responsive #logo2 {
+    display: none;
+  }
+  .topnav.responsive #logo3 {
+    display: none;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    transition: 1s;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+    transition: 1.5s;
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-box {
+    transition: 1s;
+    padding: 5px;
+    padding-top: 100px;
+  }
+  .about-box p {
+    transition: 1s;
+    padding: 5px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .beneficiaries-box {
+    padding: 20px;
+  }
+  .beneficiaries-box h2 {
+    font-size: 25px;
+    margin-top: 6%;
+  }
+  .beneficiaries {
+    transition: 1.5s;
+    flex-wrap: wrap;
+    padding: 0px;
+  }
+  img {
+    transition: 1.5s;
+    margin-top: 8%;
+  }
+  .projects-inner-box {
+    transition: 1.5s;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .projects {
+    transition: 1.5s;
+    width: 100%;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .project-description {
+    transition: 1.5s;
+    text-align: justify;
+    padding: 0px;
+  }
+  .timely-events {
+    padding: 0px;
+    padding-top: 40px;
+    flex-direction: column;
+  }
+  .timely-events h2 {
+    width: 100%;
+    margin-top: 7%;
+  }
+  .timely-events h2:first-child {
+    margin-top: 0%;
+  }
+  .courses-inner-box {
+    transition: 1.5s;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .courses {
+    transition: 1.5s;
+    width: 100%;
+    flex-direction: column;
+    padding: 0px;
+  }
+  .courses-description {
+    transition: 1.5s;
+    text-align: justify;
+    padding: 0px;
+  }
+  .student-advantage {
+    padding: 20px;
+    padding-top: 50px;
+  }
+  .advantages-inner-box {
+    padding: 0px;
+    transition: 1.5s;
+  }
+  .project-partners {
+    flex-direction: column;
+    margin-top: 1%;
+  }
+  .advantages {
+    padding: 0px;
+  }
+  .project-partners-innerbox-1 {
+    transition: 1.5s;
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+  .project-partners-innerbox-1 img {
+    width: 50%;
+  }
+  .project-partners-innerbox-2 {
+    transition: 1.5s;
+    width: 100%;
+  }
+  .industry-associates {
+    flex-direction: column-reverse;
+    margin-top: 0%;
+  }
+  .associates-innerbox-1 {
+    transition: 1.5s;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+  }
+  .associates-innerbox-1 img {
+    transition: 1.5s;
+    width: 50%;
+  }
+  .associates-innerbox-2 {
+    transition: 1.5s;
+    width: 100%;
+  }
+  .experts-panel-box {
+    transition: 1.5s;
+    flex-direction: column;
+  }
+  .experts-panel-inner-box-1 {
+    transition: 1.5s;
+    width: 100%;
+    border-right: none;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 15px;
+  }
+  .experts-panel-inner-box-2 {
+    transition: 1.5s;
+    width: 100%;
+    padding: 0px;
+  }
+  .experts-panel-inner-box-1 p {
+    transition: 1.5s;
+    margin-top: 5%;
+  }
+  .moto-box {
+    transition: 1.5s;
+    flex-direction: column;
+  }
+  .moto-logo {
+    transition: 1.5s;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+  }
+  .moto-logo img {
+    transition: 1.5s;
+    width: 200px;
+    height: 260px;
+  }
+  .moto-description {
+    transition: 1.5s;
+    width: 100%;
+    padding: 0px;
+  }
+  .moto-description h2 {
+    transition: 1.5s;
+    margin-top: 0;
+  }
+  .reach-us-box {
+    transition: 1.5s;
+    flex-direction: column;
+  }
+  .reach-us-description {
+    transition: 1.5s;
+    width: 100%;
+    padding: 0px;
+  }
+  .reach-us-btn {
+    transition: 1.5s;
+    width: 100%;
+  }
+  .reach-us-btn button {
+    width: 100%;
+  }
+  .contact-info {
+    padding: 0;
+  }
+  .contact-info p {
+    width: 100%;
+  }
+  .social-media {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .topnav {
+    padding: 0;
+  }
+  .topnav a {
+    transition: 1s;
+    font-size: 15px;
+    padding: 12px;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .topnav #logo3 {
+    transition: 1s;
+    float: left;
+    display: block;
+    padding: 0px;
+    padding-left: 15px;
+  }
+  .topnav #logo1 {
+    display: none;
+  }
+  .topnav #logo2 {
+    display: none;
+  }
+  /* .topnav img {
+    width: 100px;
+    height: 40px;
+  } */
+
+  .about-box {
+    padding-top: 110px;
+  }
+  .about-box p {
+    transition: 1s;
+    padding: 0px;
+  }
+  .beneficiaries {
+    transition: 1s;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .beneficiaries img {
+    transition: 1s;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .projects {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .project-description {
+    padding: 0;
+  }
+  .projects-inner-box {
+    padding: 0;
+  }
+  .project-partners-innerbox-1 {
+    padding-left: 50px;
+    padding-top: 10px;
+  }
+  .project-partners-innerbox-1 img {
+    width: 55%;
+  }
+  .associates-innerbox-1 {
+    padding: 50px;
+    padding-top: 10px;
+  }
+  .associates-innerbox-1 img {
+    width: 50%;
+  }
+  .courses {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .courses-inner-box {
+    padding: 0;
+  }
+  .courses-description {
+    padding: 0;
+  }
+  .experts-panel-box {
+    flex-direction: column;
+  }
+  .experts-panel-inner-box-1 {
+    width: 100%;
+    border: none;
+  }
+  .experts-panel-inner-box-2 {
+    width: 100%;
+  }
+  .experts {
+    padding: 15px;
+  }
+  .moto-logo {
+    width: 50%;
+    padding: 10px;
+    padding-right: 25px;
+  }
+  .moto-description {
+    padding: 10px;
+  }
+  .moto-description h2 {
+    margin-top: 25%;
+  }
+  .contact-info p {
+    width: 45%;
+  }
+  .social-media {
+    width: 45%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .beneficiaries {
+    transition: 1s;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .beneficiaries img {
+    transition: 1s;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .projects {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .project-description {
+    padding: 0;
+  }
+  .projects-inner-box {
+    padding: 0;
+  }
+  .courses {
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .courses-inner-box {
+    padding: 0;
+  }
+  .courses-description {
+    padding: 0;
+  }
+  .experts-panel-box {
+    flex-direction: column;
+  }
+  .experts-panel-inner-box-1 {
+    width: 100%;
+    border: none;
+  }
+  .experts-panel-inner-box-2 {
+    width: 100%;
+  }
+  .experts {
+    padding: 15px;
+  }
+  .contact-info p {
+    width: 35%;
+  }
+  .social-media {
+    width: 35%;
+  }
+}
